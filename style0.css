@@ -1,0 +1,23 @@
+body {
+	background-color: #666;
+	text-align: center;
+	color: #100EF0;
+	font-style: normal;
+	font-weight: 700;
+}
+
+#MonCanvas {
+	background-color: #fff;
+	border-radius: 13px;
+}
+
+#MonConteneur {
+	position: relative;
+	margin: 20px 0px;
+	text-align: center;
+}	
+
+#MonConteneurCanvas {
+	width:70%;
+	border-radius: 10px;
+}

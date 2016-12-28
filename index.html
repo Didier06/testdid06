@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Etiquettes Supports avec Zim "fit"</title>
+<!--Votre feuille de style -->
+<link rel="stylesheet" href="style0.css">
+<!--Bibliothèque JQuery -->
+<script src="lib/jquery-3.1.1.min.js"></script>
+<!--Bibliothèque EaselJs -->
+<script src="lib/createjs-2015.11.26.combined.js"></script>
+<script>var zon = true; // true for comments from zim code</script>
+<script src="lib/zim_4.5.0.js"></script><!-- bibliothèque et objects zimjs  -->
+
+<script src="objets/dessin_etiquettes_zim.js"></script>
+<script src="objets/dessin_supports_rect_zim.js"></script>
+<script src="objets/dessin_bmp_etiquettes_zim.js"></script>
+<script src="objets/etiquette_zim.js"></script>
+<script src="objets/support.js"></script>
+<script src="objets/liaison_etiq_support_zim.js"></script>
+
+<!--Votre programme -->	
+
+<script src="etiquettes_supports_zim_fit.js"></script>
+<script>
+var scaling = "fit"; // Le canvas s'adapte à la taille de la fenètre du navigateur en conservant le rapport largeur/hauterur
+var width = 1024; // taille initiale.
+var height = 768;
+var color = "#acd241"; //couleur du fond
+var frame = new zim.Frame(scaling, width, height, color); // définition du cadre de la scène avec zimjs
+frame.on("ready", function() { // dès que la scène est prête.
+		zog("Le cadre ou la scène Zim frame est prête !!"); // commentaire pour la console		
+	// insérer votre code dans la fonction init() dans le fichier conteant votre programme (ici etiquettes_supports_zim_fit.js)"
+		init();
+	
+}); // end of ready
+</script>
+
+</head>
+  
+<body>
+
+
+</body>
+</html>
